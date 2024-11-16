@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Unggah-Ungguh Bahasa Jawa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kuis Unggah-Ungguh Bahasa Jawa</h1>
+        <p>Latih pemahamanmu tentang unggah-ungguh bahasa Jawa dengan kuis interaktif ini!</p>
+    </header>
+
+    <main>
+        <!-- Halaman Mulai -->
+        <section id="start-screen">
+            <div class="card">
+                <h2>Selamat Datang</h2>
+                <p>Apakah kamu siap untuk menguji pengetahuanmu?</p>
+                <button class="btn-primary" onclick="startQuiz()">Mulai Kuis</button>
+            </div>
+        </section>
+
+        <!-- Halaman Kuis -->
+        <section id="quiz-screen" class="hidden">
+            <div class="card">
+                <div id="question-container">
+                    <p id="question" class="question-text"></p>
+                    <div id="options" class="options-container"></div>
+                </div>
+                <div id="progress-container">
+                    <p id="progress">Soal <span id="current-question"></span> dari <span id="total-questions"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman Hasil -->
+        <section id="result-screen" class="hidden">
+            <div class="card">
+                <h2>Hasil Kuis</h2>
+                <p id="score"></p>
+                <div id="correct-answers" class="answers-container"></div>
+                <button class="btn-secondary" onclick="restartQuiz()">Coba Lagi</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kuis Bahasa Jawa - Dibuat dengan ❤️ untuk pembelajaran.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
